@@ -14,7 +14,7 @@ const UserSearch: React.FC = () => {
 
   useEffect(()=>{
     if(!inputRef.current) return; // 이렇게 early return 을 해주면, 아랫줄에 에러가 안 남. 
-    inputRef.current.focus();
+    inputRef.current.focus(); // 사용자가 직접 input에 focus를 주지 않아도, 이 컴포넌트가 렌더링 되기만 하면 자동으로 알아서 focusing을 주는 기능
   }, [])
 
   const handleClick = () => {
