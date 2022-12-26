@@ -1,6 +1,6 @@
 // 1) Import ReactDOM library
 import ReactDOM from 'react-dom/client';
-import EventComponent from './event/EventComponent';
+import EventComponent from './events/EventComponent';
 
 // 2) Get a reference to the div with ID root
 const el = document.getElementById('root');
