@@ -7,15 +7,26 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _message__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./message */ \"./src/message.js\");\n\n\nconsole.log(_message__WEBPACK_IMPORTED_MODULE_0__.default);\n\n//# sourceURL=webpack://bundler/./src/index.js?");
+
+/***/ }),
 
 /***/ "./src/message.js":
 /*!************************!*\
   !*** ./src/message.js ***!
   \************************/
-/***/ (function(module) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("module.exports = 'Hi, there!'; \n\n//# sourceURL=webpack://bundler/./src/message.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ('Hi, there!'); \n\n//# sourceURL=webpack://bundler/./src/message.js?");
 
 /***/ })
 
@@ -45,11 +56,21 @@ eval("module.exports = 'Hi, there!'; \n\n//# sourceURL=webpack://bundler/./src/m
 /******/ 	}
 /******/ 	
 /************************************************************************/
-!function() {
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-eval("const message = __webpack_require__(/*! ./message */ \"./src/message.js\");\n\nconsole.log(message);\n\n//# sourceURL=webpack://bundler/./src/index.js?");
-}();
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+/******/ 	// startup
+/******/ 	// Load entry module
+/******/ 	__webpack_require__("./src/index.js");
+/******/ 	// This entry module used 'exports' so it can't be inlined
 /******/ })()
 ;
