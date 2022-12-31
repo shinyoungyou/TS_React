@@ -1,0 +1,20 @@
+var webpack_modules = {
+	'./src/message.js': (module) => {
+		module.exports = 'Hi there!'
+	},
+}; // object = { key: value };
+// key = './src/message.js'
+// value =  (module) => {
+//		module.exports = 'Hi there!'
+// }
+
+function webpack_require(moduleId) {
+	var moduleFn = webpack_modules[moduleID];
+	var module = { exports : {} };
+	moduleFn(module);
+	return module.exports;; // 'Hi there!'
+}
+
+// index.js
+const message = webpack_require('./src/message.js'); // 'Hi there!'
+console.log(message); // 'Hi there!'
